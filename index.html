@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ZST Converter</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="zst2.png" type="image/x-icon">
+	<script src="main.js" defer></script>
+</head>
+<body>
+	<h1>ZST Converter</h1>
+
+	<p>Wartość do przeliczenia (zł)</p>
+	<input type="number" id="input" onchange onpropertychange onkeyuponpaste oninput="update(this.value)"">
+
+	<div>
+		<h2>Jest to:</h2>
+		<table>
+			<tr>
+				<td id="sasin">0</td>
+				<td>sasinów</td>
+			</tr>
+			<tr>
+				<td id="sernik">0</td>
+				<td>kilogramów sernika</td>
+			</tr>
+			<tr>
+				<td id="krzeslo">0</td>
+				<td>krzeseł ZST</td>
+			</tr>
+			<tr>
+				<td id="kart">0</td>
+				<td>kart R7 370</td>
+			</tr>
+			<tr>
+				<td id="slupek">0</td>
+				<td>słupków w Częstochowie</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
