@@ -3,12 +3,14 @@ const sernik = document.getElementById('sernik');
 const krzeslo = document.getElementById('krzeslo');
 const kart = document.getElementById('kart');
 const slupek = document.getElementById('slupek');
+const amarena = document.getElementById('amarena');
 
 const sasinVal = 70000000;
 const sernikVal = 29.99;
 const krzesloVal = 29915.31;
 const kartVal = 198.15;
 const slupekVal = 10000;
+const amarenaVal = 6;
 
 function update(val) {
 	if(val == ""){
@@ -17,11 +19,13 @@ function update(val) {
 		krzeslo.textContent = "0";
 		kart.textContent = "0";
 		slupek.textContent = "0";
+		amarena.textContent = "0";
 	} else {
 		sasin.textContent = (val / sasinVal);
 		sernik.textContent = (val / sernikVal);
 		krzeslo.textContent = (val / krzesloVal);
 		kart.textContent = (val / kartVal);
 		slupek.textContent = (val / slupekVal);
+		amarena.textContent = (val / amarenaVal);
 	}
 }
